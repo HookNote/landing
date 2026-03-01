@@ -4,167 +4,521 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HookNote - Únete a nuestro programa de testing</title>
+    <title>HookNote - El punto de entrada universal para tus automatizaciones</title>
+    <meta name="description"
+        content="Envía texto o audio a múltiples webhooks de forma inmediata, sin bots ni chats intermedios. Tu app puente hacia Zapier, Make y n8n con privacidad total desde tu móvil Android.">
+    <meta name="keywords"
+        content="automatización, webhooks, make, n8n, zapier, productividad, android app, enviar audio a webhook">
+    <meta name="author" content="HookNote">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f0fdfd">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hooknote.github.io/landing/">
+    <meta property="og:title" content="HookNote - El punto de entrada universal para automatizaciones">
+    <meta property="og:description"
+        content="Lanza tus automatizaciones en un toque. Envía texto o audio a hasta 5 webhooks diferentes. Sin chats. Sin bots. Sin fricción.">
+    <meta property="og:image" content="https://hooknote.github.io/landing/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hooknote.github.io/landing/">
+    <meta property="twitter:title" content="HookNote - El punto de entrada universal para automatizaciones">
+    <meta property="twitter:description"
+        content="Lanza tus automatizaciones en un toque. Envía texto o audio directo a tu endpoint.">
+    <meta property="twitter:image" content="https://hooknote.github.io/landing/images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/landing/images/logo.png">
+    <link rel="apple-touch-icon" href="/landing/images/logo.png">
+    <link rel="canonical" href="https://hooknote.github.io/landing/">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/landing/assets/index-4sn8yAiw.js"></script>
-  <link rel="stylesheet" crossorigin href="/landing/assets/index-3Erb9hY4.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+  <script type="module" crossorigin src="/landing/assets/index-C0J4cwf-.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing/assets/index-DaSZIXkI.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <img src="/landing/images/logo.png" alt="HookNote Logo" style="height: 40px; width: auto; border-radius: 8px;">
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo" style="text-decoration: none;">
+                <img src="/landing/images/logo.png" alt="HookNote Logo">
                 HookNote
-            </div>
-            <!-- <a href="#join" style="color: var(--app-muted); text-decoration: none; font-weight: 500;">Contactar</a> -->
-        </nav>
+            </a>
 
-        <section class="hero">
-            <h1>Ayúdame a lanzar <br />HookNote al mundo</h1>
-            <p>Necesito 20 testers comprometidos para superar la fase de pruebas cerrada de Google Play. Tu ayuda es
-                esencial.</p>
-            <a href="#join" class="cta-button">Quiero ser Tester</a>
+            <!-- Desktop Links -->
+            <div class="nav-links desktop-menu">
+                <a href="#how-it-works">Cómo funciona</a>
+                <a href="#use-cases">Casos de uso</a>
+                <a href="#privacy">Privacidad</a>
+                <a href="#faq">FAQ</a>
+            </div>
+
+            <!-- Hamburger Button -->
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu">
+            <a href="#how-it-works" class="mobile-link">Cómo funciona</a>
+            <a href="#use-cases" class="mobile-link">Casos de uso</a>
+            <a href="#privacy" class="mobile-link">Privacidad</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <hr class="mobile-divider">
+            <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
+                class="cta-button primary-btn w-full mt-4">
+                <span>Descargar App</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1️⃣ Hero -->
+        <section class="hero pb-20 pt-20">
+            <div class="container text-center">
+                <div class="badge fade-up">Solo Android · Actualmente gratuita durante la fase beta</div>
+                <h1 class="fade-up delay-1">Lanza tus automatizaciones<br>en un toque</h1>
+                <p class="subtitle fade-up delay-2">HookNote te permite enviar texto o audio a hasta 5 webhooks
+                    diferentes. Sin chats. Sin bots. Sin fricción.</p>
+
+                <div class="hero-actions fade-up delay-3">
+                    <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
+                        class="cta-button primary-btn">
+                        <span>Descargar en Google Play</span>
+                    </a>
+                    <a href="#how-it-works" class="cta-button secondary-btn">Ver cómo funciona</a>
+                </div>
+            </div>
         </section>
 
-        <section class="glass-card mission-section">
-            <h2>¿Por qué te necesito?</h2>
-            <div style="max-width: 700px; margin: 0 auto;">
-                <p>Google exige que las nuevas cuentas de desarrollador realicen una <strong>prueba cerrada con 20
-                        usuarios durante 14 días consecutivos</strong> antes de poder publicar una aplicación en la Play
-                    Store. Sin este paso, HookNote no puede ver la luz.</p>
-
-                <div class="highlight-box">
-                    <strong>El compromiso del tester:</strong>
-                    <ul class="requirement-list">
-                        <li><span class="check">✓</span> Instalar la aplicación en dispositivos Android.</li>
-                        <li><span class="check">✓</span> Mantenerla instalada durante 14 días seguidos.</li>
-                        <li><span class="check">✓</span> Abrirla y usarla brevemente cada pocos días.</li>
-                        <li><span class="check">✓</span> Enviar feedback si encuentras fallos (opcional pero
-                            agradecido).</li>
+        <!-- 2️⃣ El problema real -->
+        <section class="problem-section bg-soft py-20">
+            <div class="container text-center max-w-800">
+                <h2 class="section-title">Automatizar está bien.<br>Enviar información no tanto.</h2>
+                <div class="problem-list glass-panel text-left mt-10">
+                    <ul>
+                        <li><span class="cross">✕</span> Perder tiempo buscando el bot correcto en Telegram/Discord.
+                        </li>
+                        <li><span class="cross">✕</span> Tener varias apps de mensajería abiertas para distintos flujos.
+                        </li>
+                        <li><span class="cross">✕</span> Copiar, cambiar de app y pegar texto constantemente.</li>
+                        <li><span class="cross">✕</span> Rellenar formularios lentos en el navegador.</li>
                     </ul>
-                </div>
-            </div>
-
-            <div style="max-width: 700px; margin: 40px auto 0;">
-                <h3 style="margin-bottom: 20px; font-size: 1.5rem;">¿Por qué apuntarse?</h3>
-                <p style="margin-bottom: 24px; color: var(--app-muted);">Tu ayuda tiene un impacto real en este proyecto
-                    personal:</p>
-                <div class="grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 0;">
-                    <div
-                        style="background: rgba(255,255,255,0.4); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.5);">
-                        <div style="font-size: 1.5rem; margin-bottom: 8px;">🚀</div>
-                        <strong>Acceso Anticipado</strong>
-                        <p style="font-size: 0.9rem; color: var(--app-muted);">Prueba HookNote antes que nadie.</p>
-                    </div>
-                    <div
-                        style="background: rgba(255,255,255,0.4); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.5);">
-                        <div style="font-size: 1.5rem; margin-bottom: 8px;">🕹️</div>
-                        <strong>Feedback Real</strong>
-                        <p style="font-size: 0.9rem; color: var(--app-muted);">Tus ideas moldearán las futuras
-                            versiones.</p>
-                    </div>
-                    <div
-                        style="background: rgba(255,255,255,0.4); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.5);">
-                        <div style="font-size: 1.5rem; margin-bottom: 8px;">❤️</div>
-                        <strong>Apoyo Indie</strong>
-                        <p style="font-size: 0.9rem; color: var(--app-muted);">Ayudas a un desarrollador a lanzar su
-                            app.</p>
+                    <div class="problem-solution mt-8">
+                        <div class="highlight-line"></div>
+                        <p><strong>HookNote nace para resolver exactamente eso:</strong><br>Un único punto de entrada
+                            unificado para todos tus flujos de trabajo.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="app-info">
-            <h2 style="text-align: center;">¿Qué es HookNote?</h2>
-            <p style="text-align: center; color: var(--app-muted); max-width: 600px; margin: 10px auto;">Tu puente entre
-                el mundo físico y tus automatizaciones.</p>
+        <!-- 3️⃣ Cómo funciona -->
+        <section id="how-it-works" class="how-it-works py-20">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Tres pasos. Sin fricción.</h2>
+                    <p class="subtitle">No es un chat. Es tu disparador personal hacia la nube.</p>
+                </div>
 
-            <div class="screenshot-grid">
-                <div class="screenshot-item">
-                    <img src="/landing/images/audio.png" alt="Grabadora de Audio">
-                </div>
-                <div class="screenshot-item">
-                    <img src="/landing/images/texto.png" alt="Envío de Texto">
-                </div>
-                <div class="screenshot-item">
-                    <img src="/landing/images/webhook.png" alt="Configuración de Webhooks">
-                </div>
-            </div>
-
-            <div class="grid">
-                <div class="feature-card">
-                    <span class="feature-icon">🎙️</span>
-                    <h3>Graba y envía</h3>
-                    <p>Captura notas de voz con un solo toque y envíalas automáticamente a tus webhooks (Zapier, n8n,
-                        IFTTT).</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">📝</span>
-                    <h3>Notas rápidas</h3>
-                    <p>Escribe texto y envíalo instantáneamente. Ideal para capturar ideas rápidas sin distracciones.
-                    </p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🔒</span>
-                    <h3>Privacidad Total</h3>
-                    <p>Tus datos viajan de tu móvil a TUS servidores. Nosotros no almacenamos nada.</p>
+                <div class="steps-grid">
+                    <div class="step-card glass-panel">
+                        <div class="step-number">1</div>
+                        <h3>Configura tus webhooks</h3>
+                        <p>Guarda de 1 a 5 endpoints distintos (n8n, Make, Zapier, tu propio backend).</p>
+                        <img src="/landing/images/webhook.png" alt="Configurar Webhooks" class="step-image">
+                    </div>
+                    <div class="step-card glass-panel">
+                        <div class="step-number">2</div>
+                        <h3>Elige el flujo destino</h3>
+                        <p>Abre la app y selecciona rápidamente hacia dónde quieres enviar la información.</p>
+                        <img src="/landing/images/texto.png" alt="Seleccionar flujo" class="step-image">
+                    </div>
+                    <div class="step-card glass-panel">
+                        <div class="step-number">3</div>
+                        <h3>Envía texto o audio</h3>
+                        <p>Dispara tu mensaje directamente a tu endpoint en formato estructurado JSON.</p>
+                        <img src="/landing/images/audio.png" alt="Enviar Audio" class="step-image">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="join" class="form-section glass-card" style="margin-top: 60px;">
-            <h2>Únete al equipo de pruebas</h2>
+        <!-- 4️⃣ Casos de uso -->
+        <section id="use-cases" class="use-cases bg-soft py-20">
+            <div class="container">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Casos de uso reales</h2>
+                    <p class="subtitle">Descubre cómo los makers están integrando HookNote en sus rutinas diarias.</p>
+                </div>
 
-            <div style="max-width: 600px; margin: 30px auto; text-align: left;">
-                <h3 style="margin-bottom: 20px; font-size: 1.2rem;">¿Cómo funciona el proceso?</h3>
-                <ol class="requirement-list" style="counter-reset: item;">
-                    <li>
-                        <span class="check" style="width: 24px;">1.</span>
-                        <div>
-                            <strong>Regístrate:</strong> Rellena el formulario con tu correo de Google (Gmail) para
-                            poder añadirte a la whitelist de la Play Store.
+                <div class="use-cases-grid">
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                                <path d="M12 12v9"></path>
+                                <path d="m8 17 4 4 4-4"></path>
+                            </svg>
                         </div>
-                    </li>
-                    <li>
-                        <span class="check" style="width: 24px;">2.</span>
-                        <div>
-                            <strong>Espera a la activación:</strong> Necesito reunir a los 20 testers antes de
-                            iniciar la prueba. No recibirás el acceso inmediatamente.
+                        <h4>Inbox Universal</h4>
+                        <p>Envía todas tus tareas o notas sueltas instantáneamente a Notion u Obsidian.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 16v-4"></path>
+                                <path d="M12 8h.01"></path>
+                            </svg>
                         </div>
-                    </li>
-                    <li>
-                        <span class="check" style="width: 24px;">3.</span>
-                        <div>
-                            <strong>Recibe el acceso:</strong> Una vez completado el grupo, te enviaré un email con:
-                            <ul style="margin-top: 8px; font-size: 0.95rem; color: var(--app-muted);">
-                                <li>🔗 El enlace de descarga en Google Play.</li>
-                                <li>📖 Una guía sencilla de instalación.</li>
-                                <li>🧪 Webhooks de prueba preconfigurados para que puedas testear la app aunque no seas
-                                    técnico.</li>
-                            </ul>
+                        <h4>Captura de Ideas</h4>
+                        <p>Graba notas de voz ricas mientras caminas para procesarlas o transcribirlas luego.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2v20"></path>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
                         </div>
-                    </li>
-                </ol>
+                        <h4>Registro de Gastos</h4>
+                        <p>Apunta rápidamente un gasto enviando el importe y concepto directo a tu Google Sheets.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"></path>
+                                <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"></path>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 22v-2"></path>
+                                <path d="m17 20.66-1-1.73"></path>
+                                <path d="M11 10.27 7 3.34"></path>
+                                <path d="m20.66 17-1.73-1"></path>
+                                <path d="m3.34 7 1.73 1"></path>
+                                <path d="M14 12h8"></path>
+                                <path d="M2 12h2"></path>
+                                <path d="m20.66 7-1.73 1"></path>
+                                <path d="m3.34 17 1.73-1"></path>
+                                <path d="m17 3.34-1 1.73"></path>
+                                <path d="m11 13.73-4 6.93"></path>
+                            </svg>
+                        </div>
+                        <h4>Activar Flujos n8n / Make</h4>
+                        <p>Lanza automatizaciones complejas o procesos batch del servidor con un simple toque.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h4>Control Domótico</h4>
+                        <p>Envía comandos simples a tu Home Assistant o servidor local y visualiza su estado.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" x2="12" y1="19" y2="22"></line>
+                            </svg>
+                        </div>
+                        <h4>Diario en Audio</h4>
+                        <p>Registra tus pensamientos diarios enviando notas de voz privadas a tu repositorio.</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Placeholder Form Button -->
-            <a href="https://airtable.com/appsfR6cdsuIkAtZn/pagk4rQ0Wsu5eZFZA/form" target="_blank" class="cta-button"
-                style="background: var(--app-text); color: white;">Ir al Formulario de
-                Registro</a>
-            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--app-muted);">
-                Prometo no usar tu correo para nada más que esta prueba.
-            </p>
         </section>
 
-    </div>
+        <!-- 5️⃣ Privacidad y Arquitectura -->
+        <section id="privacy" class="privacy-section py-20 bg-dark text-white">
+            <div class="container">
+                <div class="privacy-grid">
+                    <div class="privacy-content">
+                        <h2 class="section-title">Tu información es <span class="highlight-cyan">solo tuya.</span></h2>
+                        <ul class="privacy-list">
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Cero servidores intermedios.</strong>
+                                    <p>Los datos van directamente desde tu dispositivo al endpoint que tú configures.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Tokens en local.</strong>
+                                    <p>Las URLs y las credenciales se encriptan y guardan exclusivamente en el
+                                        almacenamiento de tu móvil.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Sin historial remoto.</strong>
+                                    <p>Si envías un texto o un audio, nunca pasa por nuestros servidores. Nosotros no
+                                        almacenamos nada, nunca.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Analíticas cero.</strong>
+                                    <p>No recopilamos contenido, ni leemos lo que escribes, ni analizamos tu voz.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="privacy-visual">
+                        <div class="advanced-diagram">
+                            <div class="diagram-node mobile-node">
+                                <div class="node-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                        <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <div class="node-text">Tu Móvil</div>
+                            </div>
+
+                            <div class="diagram-connection">
+                                <div class="secure-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    Cifrado E2E
+                                </div>
+                                <div class="connection-path">
+                                    <div class="data-packet"></div>
+                                </div>
+                            </div>
+
+                            <div class="diagram-node webhook-node">
+                                <div class="node-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="node-text">Tu Webhook</div>
+                                <div class="node-sub">(Make, n8n, etc.)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6️⃣ Qué se envía exactamente (Devs) -->
+        <section class="payload-section bg-soft py-20">
+            <div class="container max-w-800">
+                <div class="text-center mb-10">
+                    <h2 class="section-title">Estructura de los datos</h2>
+                    <p class="subtitle">Enviados (POST) al endpoint configurado.</p>
+                </div>
+
+                <div class="code-editor">
+                    <div class="code-header">
+                        <div class="filename">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: #9cdcfe;">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Texto (JSON)
+                        </div>
+                        <div class="code-badge">POST</div>
+                    </div>
+                    <pre><code><span class="token punct">{</span>
+  <span class="token key">"kind"</span><span class="token punct">:</span> <span class="token string">"text"</span><span class="token punct">,</span>
+  <span class="token key">"text"</span><span class="token punct">:</span> <span class="token string">"Hola este es un mensaje de prueba"</span><span class="token punct">,</span>
+  <span class="token key">"ts"</span><span class="token punct">:</span> <span class="token number">1704803456789</span>
+<span class="token punct">}</span></code></pre>
+                </div>
+
+                <div class="code-editor mt-6">
+                    <div class="code-header">
+                        <div class="filename">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: #ce9178;">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                <line x1="12" x2="12" y1="19" y2="22"></line>
+                            </svg>
+                            Audio (JSON)
+                        </div>
+                        <div class="code-badge">POST</div>
+                    </div>
+                    <pre><code><span class="token punct">{</span>
+  <span class="token key">"kind"</span><span class="token punct">:</span> <span class="token string">"audio"</span><span class="token punct">,</span>
+  <span class="token key">"format"</span><span class="token punct">:</span> <span class="token string">"webm"</span><span class="token punct">,</span>
+  <span class="token key">"ts"</span><span class="token punct">:</span> <span class="token string">"1704803456789"</span><span class="token punct">,</span>
+  <span class="token key">"file"</span><span class="token punct">:</span> <span class="token string">"(Binary .webm file)"</span>
+<span class="token punct">}</span></code></pre>
+                </div>
+
+                <div class="code-editor mt-6">
+                    <div class="code-header">
+                        <div class="filename">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" style="color: #27c93f;">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 16 16 12 12 8"></polyline>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                            Respuesta (Opcional)
+                        </div>
+                        <div class="code-badge" style="color: #27c93f; background: rgba(39, 201, 63, 0.1);">200 OK</div>
+                    </div>
+                    <pre><code><span class="token comment">// Si tu servidor devuelve un JSON con el campo "message",
+// HookNote lo mostrará en el aviso de confirmación.</span>
+<span class="token punct">{</span>
+  <span class="token key">"message"</span><span class="token punct">:</span> <span class="token string">"Saved successfully!"</span>
+<span class="token punct">}</span></code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7️⃣ Para quién es & 8️⃣ FAQ -->
+        <section id="faq" class="faq-section py-20">
+            <div class="container max-w-800">
+                <h2 class="section-title text-center mb-16">Preguntas Frecuentes</h2>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Esta app es un chat tipo Telegram o WhatsApp?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>Claro y rotundo: NO.</strong> Su misión no es conversar, sino <em>disparar
+                                    información</em>. Funciona como un mando a distancia para enviar paquetes de datos
+                                hacia tus servidores o flujos (Zapier, n8n, Make).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Puedo recibir respuesta o confirmación del webhook?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí. Aunque no es bidireccional (tipo chat), si tu webhook devuelve un JSON válido con el
+                                campo <code>message</code> resuelto con status 200, HookNote mostrará tu mensaje en la
+                                pantalla para confirmar que el proceso terminó (Ej: "Nota guardada correctamente"). En
+                                caso contrario, guardará el log con el código de error HTTP generado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Dónde se almacenan mis audios y mis datos?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Exclusivamente en tu dispositivo móvil y en el servidor destino que tú hayas configurado.
+                                HookNote no lee, no guarda y no sube tus datos a bases de datos propias.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Cuántos webhooks puedo configurar?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes almacenar y organizar hasta 5 flujos/webhooks distintos y alternar entre ellos con
+                                un solo clic.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Es gratuita o de pago?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Actualmente es <strong>100% gratuita</strong> y sin publicidad, ya que estamos validando
+                                el concepto
+                                en fase beta. En el futuro, introduciremos una capa PRO para opciones más avanzadas,
+                                pero las funciones core básicas siempre seguirán siendo gratuitas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9️⃣ CTA Final -->
+        <section class="final-cta py-20 bg-primary text-white text-center">
+            <div class="container max-w-800">
+                <h2 class="section-title" style="color: white; margin-bottom: 24px;">Empieza a lanzar tus flujos más
+                    rápido.</h2>
+                <div class="cta-buttons-group">
+                    <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
+                        class="cta-button btn-white">
+                        <span>Descargar en Google Play</span>
+                    </a>
+                </div>
+                <div class="ios-cta mt-8 glass-box">
+                    <p style="margin-bottom: 12px; opacity: 0.9;">¿Tienes un iPhone? Queremos saber con cuántos de
+                        vosotros contamos.</p>
+                    <a href="https://airtable.com/appsfR6cdsuIkAtZn/pagk4rQ0Wsu5eZFZA/form" target="_blank"
+                        class="ios-link">
+                        Apúntate a la lista para iOS →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 HookNote - Diseñado y desarrollado con pasión.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo opacity-80" style="margin-bottom: 16px;">
+                    <img src="/landing/images/logo.png" alt="HookNote Logo" style="height: 30px;">
+                    HookNote
+                </div>
+                <p>El punto de entrada universal para tus flujos de automatización.</p>
+                <div class="maker-badge">
+                    Creado con ❤️ por un maker, para makers. &copy; 2026
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
