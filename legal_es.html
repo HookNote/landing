@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aviso Legal, Términos de Uso y Política de Privacidad | HookNote</title>
+    <meta name="description"
+        content="Aviso legal, términos y condiciones de uso y política de privacidad de HookNote. App desarrollada por DayCraft Studio Apps." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
+    <link rel="canonical" href="https://daycraftstudioapps.github.io/HookNote-legal/" />
+
+    <!-- Typography matching the landing page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="HookNote" />
+    <meta property="og:title" content="Aviso Legal y Política de Privacidad | HookNote" />
+    <meta property="og:description"
+        content="Términos de uso y política de privacidad de HookNote (RGPD). Datos tratados, finalidad, conservación y derechos." />
+    <meta property="og:url" content="https://daycraftstudioapps.github.io/HookNote-legal/" />
+    <meta property="og:image" content="https://daycraftstudioapps.github.io/HookNote-legal/og-image.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aviso Legal y Política de Privacidad | HookNote" />
+    <meta name="twitter:description" content="Términos de uso y política de privacidad de HookNote (RGPD)." />
+    <meta name="twitter:image" content="https://daycraftstudioapps.github.io/HookNote-legal/og-image.png" />
+
+    <link rel="icon" href="./images/logo.png" />
+
+    <style>
+        :root {
+            /* Adaptation to landing page colors (cyan/light theme) */
+            --bg: #f0fdfd;
+            --text: #0f172a;
+            --muted: #475569;
+            --border: rgba(0, 188, 212, 0.2);
+            --accent: #00bcd4;
+            --accent-dark: #0097a7;
+            --ok: #27c93f;
+            --sans: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            --mono: 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+            --max: 920px;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--sans);
+            color: var(--text);
+            background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+            line-height: 1.65;
+            /* Evita que emails largos rompan el ancho en móviles */
+            overflow-wrap: break-word;
+            word-break: break-word;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--accent-dark);
+            transition: color .2s
+        }
+
+        a:hover {
+            color: var(--text)
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 26px 18px 90px;
+        }
+
+        /* --- HEADER RESPONSIVE MEJORADO --- */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.85);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .brand {
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+            color: var(--text);
+        }
+
+        .brand img {
+            height: 32px;
+            border-radius: 6px;
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            font-size: .95rem;
+            font-weight: 500;
+            flex-wrap: wrap;
+        }
+
+        /* Más área táctil para el dedo */
+        .navlinks a:not(.btn-store) {
+            padding: 5px 0;
+            text-decoration: none;
+            color: var(--muted)
+        }
+
+        .navlinks a:not(.btn-store):hover {
+            color: var(--accent)
+        }
+
+        .btn-store {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: var(--text);
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: .95rem;
+            font-weight: 600;
+            color: white !important;
+            transition: all .3s cubic-bezier(0.16, 1, 0.3, 1);
+            white-space: nowrap;
+            box-shadow: 0 4px 6px -1px rgba(0, 188, 212, 0.1);
+        }
+
+        .btn-store:hover {
+            background: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 188, 212, 0.1);
+        }
+
+        /* ---------------------------------- */
+
+        .hero {
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 10px 0;
+            line-height: 1.1;
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.02em;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .sub {
+            color: var(--muted);
+            margin: 0 auto 20px;
+            max-width: 72ch;
+            font-size: 1.15rem;
+        }
+
+        .meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 14px
+        }
+
+        .badge {
+            padding: 6px 16px;
+            background: #e0faff;
+            border-radius: 100px;
+            font-size: .85rem;
+            color: #0097a7;
+            font-weight: 600;
+        }
+
+        .ok {
+            color: var(--ok);
+            margin-right: 4px;
+        }
+
+        .toc {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            gap: 8px;
+            max-width: 600px;
+            padding-left: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .toc a {
+            display: block;
+            text-decoration: none;
+            color: var(--muted);
+            padding: 12px 16px;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            font-weight: 500;
+            transition: all 0.2s;
+            box-shadow: 0 1px 2px rgba(0, 188, 212, 0.05);
+        }
+
+        .toc a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            transform: translateX(4px);
+            box-shadow: 0 4px 6px rgba(0, 188, 212, 0.1);
+        }
+
+        section.block {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        section.block:first-of-type {
+            border-top: 0;
+            padding-top: 20px;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 1px 2px 0 rgba(0, 188, 212, 0.1);
+            margin-top: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .glass-box {
+                padding: 24px;
+            }
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 0 0 16px;
+            color: var(--text);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 32px 0 12px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .callout {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(0, 188, 212, 0.05);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            color: var(--text);
+        }
+
+        .grid2 {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            margin: 20px 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .grid2 {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        .kbd {
+            font-family: var(--mono);
+            background: rgba(0, 0, 0, .04);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            border: 1px solid rgba(0, 0, 0, .08);
+            display: inline-block;
+            color: var(--text);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: .9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        :target {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" aria-label="Navegación principal">
+            <a class="brand" href="./index.html">
+                <img src="./images/logo.png" alt="HookNote Logo">
+                <span>HookNote</span>
+            </a>
+            <div class="navlinks">
+                <a href="./index.html#how-it-works">Landing Page</a>
+                <a href="#terminos">Términos</a>
+                <a href="#privacidad">Privacidad</a>
+                <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" class="btn-store"
+                    target="_blank" rel="noopener noreferrer">
+                    Descargar App
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrap" id="top">
+        <section class="hero">
+            <h1>Aviso Legal, Términos <br /> y Política de Privacidad</h1>
+            <p class="sub">
+                Documento legal de <strong>HookNote</strong>. Aquí encontrarás los <strong>Términos y Condiciones de
+                    Uso</strong> y la
+                <strong>Política de Privacidad</strong> conforme al RGPD.
+            </p>
+
+            <div class="meta" role="list">
+                <span class="badge" role="listitem">Vigor: <strong>1 de febrero de 2026</strong></span>
+                <span class="badge" role="listitem">Dev: <strong>DayCraft Studio Apps</strong></span>
+                <span class="badge" role="listitem"><span class="ok">●</span> App sin anuncios ni analíticas</span>
+            </div>
+
+            <ul class="toc" aria-label="Índice">
+                <li><a href="#terminos">📜 Términos y Condiciones de Uso</a></li>
+                <li><a href="#privacidad">🛡️ Política de Privacidad</a></li>
+                <li><a href="#contacto">📩 Contacto</a></li>
+            </ul>
+        </section>
+
+        <main class="glass-box">
+            <section class="block" id="terminos">
+                <h2>📜 Términos y Condiciones de Uso – HookNote</h2>
+                <p style="font-size: 0.9rem; margin-bottom: 24px;">Última actualización: <strong>1 de febrero de
+                        2026</strong></p>
+
+                <p>
+                    Bienvenido/a a <strong>HookNote</strong>, una aplicación móvil desarrollada por <strong>DayCraft
+                        Studio Apps (by J. Martínez H.)</strong>
+                    (“el Desarrollador”). Al descargar, instalar o utilizar HookNote, el usuario (“tú” o “el usuario”)
+                    acepta cumplir con los
+                    presentes <strong>Términos y Condiciones de Uso</strong>. Si no estás de acuerdo con ellos, por
+                    favor, no utilices la aplicación.
+                </p>
+
+                <h3 id="objeto">1. Objeto de la Aplicación</h3>
+                <p>HookNote es una aplicación móvil gratuita que permite:</p>
+                <ul>
+                    <li>Grabar audio desde el micrófono del dispositivo y enviarlo a webhooks configurados por el
+                        usuario.</li>
+                    <li>Escribir texto y enviarlo de igual manera.</li>
+                </ul>
+                <div class="callout">
+                    <strong>Importante:</strong> la app actúa únicamente como intermediario técnico entre el dispositivo
+                    del usuario y el servicio de destino configurado por el propio usuario.
+                    <strong>HookNote no almacena, procesa ni accede a los datos enviados.</strong>
+                </div>
+
+                <h3 id="condiciones">2. Condiciones de Uso</h3>
+                <ul>
+                    <li>El usuario se compromete a utilizar la app conforme a la legislación vigente, la buena fe y el
+                        orden público.</li>
+                    <li>Está prohibido utilizar HookNote para fines ilícitos, difamatorios, ofensivos, discriminatorios
+                        o que vulneren derechos de terceros.</li>
+                    <li>El usuario no podrá alterar, descompilar, realizar ingeniería inversa o explotar comercialmente
+                        la aplicación sin autorización expresa.</li>
+                </ul>
+
+                <h3 id="webhooks">3. Webhooks y Responsabilidad</h3>
+                <ul>
+                    <li>El usuario es <strong>el único responsable</strong> de configurar y gestionar sus webhooks,
+                        incluyendo la seguridad de las URL utilizadas.</li>
+                    <li>El desarrollador <strong>no controla, monitoriza ni tiene acceso</strong> al contenido
+                        transmitido.</li>
+                    <li>Cualquier uso indebido, pérdida de datos o brecha de seguridad relacionada con los servicios de
+                        destino recae bajo la responsabilidad del usuario o del proveedor del webhook.</li>
+                </ul>
+
+                <h3 id="propiedad">4. Contenido y Propiedad</h3>
+                <ul>
+                    <li>Todo el contenido generado y enviado mediante HookNote pertenece exclusivamente al usuario.</li>
+                    <li>El desarrollador no reclama derechos sobre dicho contenido.</li>
+                    <li>El software, el nombre, el diseño, el logotipo y el código fuente de HookNote son propiedad del
+                        desarrollador y están protegidos por la legislación de propiedad intelectual.</li>
+                </ul>
+
+                <h3 id="actualizaciones">5. Actualizaciones y Disponibilidad</h3>
+                <p>
+                    HookNote podrá actualizarse, modificarse o dejar de ofrecerse en cualquier momento, con o sin
+                    notificación.
+                    Algunas versiones antiguas pueden quedar obsoletas y requerir actualización para su uso.
+                </p>
+
+                <h3 id="limitacion">6. Limitación de Responsabilidad</h3>
+                <p>HookNote se ofrece “tal cual” y sin garantías de funcionamiento ininterrumpido o libre de errores.
+                </p>
+                <p>El desarrollador no se hace responsable de:</p>
+                <ul>
+                    <li>Daños derivados del uso o imposibilidad de uso de la app.</li>
+                    <li>Fallos de red, pérdidas de datos, errores en la configuración de webhooks o mal uso por parte
+                        del usuario.</li>
+                    <li>Consecuencias del tratamiento de los datos por parte de terceros receptores.</li>
+                </ul>
+
+                <h3 id="jurisdiccion">7. Ley Aplicable y Jurisdicción</h3>
+                <p>
+                    Estos Términos se regirán e interpretarán de acuerdo con la legislación española. Cualquier disputa
+                    será resuelta ante los tribunales competentes del domicilio del desarrollador.
+                </p>
+            </section>
+
+            <section class="block" id="privacidad">
+                <h2>🛡️ Política de Privacidad – HookNote</h2>
+                <p style="font-size: 0.9rem; margin-bottom: 24px;">Última actualización: <strong>1 de febrero de
+                        2026</strong></p>
+
+                <p>
+                    En <strong>HookNote</strong>, desarrollada por <strong>DayCraft Studio Apps (by J. Martínez
+                        H.)</strong>, respetamos tu privacidad y nos comprometemos a proteger tus datos personales.
+                    Esta Política describe cómo tratamos la información conforme al <strong>Reglamento (UE) 2016/679
+                        (RGPD)</strong> y demás normativa aplicable.
+                </p>
+
+                <div class="grid2">
+                    <div class="callout" style="margin: 0;" id="responsable">
+                        <strong>1. Responsable del Tratamiento</strong><br />
+                        DayCraft Studio Apps (by J. Martínez H.)<br />
+                        Contacto: <a href="mailto:daycraftstudioapps@gmail.com">daycraftstudioapps@gmail.com</a>
+                    </div>
+                    <div class="callout" style="margin: 0;">
+                        <strong>Resumen rápido</strong><br />
+                        • Datos se tratan en el dispositivo<br />
+                        • Sin servidores del desarrollador<br />
+                        • Sin anuncios ni analíticas
+                    </div>
+                </div>
+
+                <h3 id="quehace">2. Qué Hace HookNote</h3>
+                <p>HookNote realiza únicamente dos funciones:</p>
+                <ol>
+                    <li><strong>Grabar audio</strong> y enviarlo a webhooks configurados por el usuario.</li>
+                    <li><strong>Enviar texto</strong> escrito por el usuario a dichos webhooks.</li>
+                </ol>
+                <p>La app es <strong>gratuita</strong>, <strong>sin anuncios</strong> y <strong>no incluye analíticas ni
+                        SDKs de seguimiento</strong>.</p>
+
+                <h3 id="datos">3. Datos Tratados</h3>
+                <p>HookNote trata únicamente los datos mínimos necesarios para funcionar:</p>
+                <ul>
+                    <li><strong>Contenido que introduces</strong>: audio o texto.</li>
+                    <li><strong>Webhooks configurados</strong>: alias y URL (1 a 5).</li>
+                    <li><strong>Metadatos locales</strong>: estado de envío, fecha/hora.</li>
+                </ul>
+                <p><strong><span style="color:var(--accent-dark);">ℹ️</span> No se recopilan, almacenan ni procesan
+                        datos en servidores del desarrollador.</strong></p>
+
+                <h3 id="finalidad">4. Finalidad y Base Jurídica (RGPD)</h3>
+                <ul>
+                    <li><strong>Finalidad</strong>: permitir el envío de audio o texto a los webhooks configurados por
+                        el usuario.</li>
+                    <li><strong>Base jurídica</strong>:
+                        <ul>
+                            <li><strong>Ejecución de contrato</strong> (art. 6.1.b RGPD): prestación del servicio
+                                solicitado.</li>
+                            <li><strong>Consentimiento</strong> (art. 6.1.a RGPD): uso del micrófono y envío a los
+                                webhooks elegidos.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 id="procesado">5. Dónde y Cómo se Procesan los Datos</h3>
+                <ul>
+                    <li>El tratamiento ocurre <strong>únicamente en tu dispositivo</strong>.</li>
+                    <li>Los datos se transmiten <strong>directamente</strong> a los webhooks configurados sin pasar por
+                        servidores del desarrollador.</li>
+                    <li>HookNote <strong>no recibe, almacena ni intermedia</strong> dichos datos.</li>
+                </ul>
+
+                <h3 id="conservacion">6. Conservación</h3>
+                <ul>
+                    <li>HookNote <strong>no conserva datos personales</strong>.</li>
+                    <li>Tras el envío, la app <strong>limpia la información</strong>.</li>
+                    <li>Se pueden generar <strong>archivos temporales</strong> (como el audio grabado) que permanecen en
+                        tu dispositivo y puedes eliminar.</li>
+                    <li>La conservación en los webhooks depende del servicio de destino.</li>
+                </ul>
+
+                <h3 id="transferencias">7. Destinatarios y Transferencias Internacionales</h3>
+                <ul>
+                    <li>Los únicos destinatarios son los <strong>webhooks configurados por el usuario</strong>.</li>
+                    <li>Si el servicio receptor está fuera de la UE, la <strong>transferencia internacional depende
+                            exclusivamente de la decisión del usuario</strong>.</li>
+                    <li>Recomendamos revisar las políticas de privacidad de dichos servicios.</li>
+                </ul>
+
+                <h3 id="permisos">8. Permisos del Dispositivo</h3>
+                <p>Para su funcionamiento, HookNote solicita:</p>
+                <ul>
+                    <li>🎤 <strong>Micrófono</strong>: para grabar audio.</li>
+                    <li>🌐 <strong>Internet</strong>: para enviar datos a webhooks.</li>
+                    <li>📁 <strong>Almacenamiento</strong>: para crear, leer o eliminar archivos temporales (audio o
+                        texto).</li>
+                </ul>
+                <p>Puedes gestionar o revocar estos permisos en los ajustes del dispositivo. La falta de permisos puede
+                    impedir ciertas funciones (p. ej., sin micrófono no se grabará).</p>
+
+                <h3 id="seguridad">9. Seguridad</h3>
+                <ul>
+                    <li>HookNote utiliza mecanismos nativos del sistema operativo, incluido el <strong>almacenamiento
+                            con ámbito (scoped storage)</strong>, para minimizar el acceso a archivos.</li>
+                    <li>Se recomienda configurar webhooks <strong>HTTPS</strong> para evitar riesgos de interceptación.
+                    </li>
+                    <li>La seguridad y tratamiento posterior de los datos dependen de los servicios de destino.</li>
+                </ul>
+
+                <h3 id="menores">10. Menores de Edad</h3>
+                <p>
+                    HookNote es una app de propósito general <strong>no dirigida específicamente a menores</strong>.
+                </p>
+                <p>
+                    Si un menor utiliza la app, el envío de datos a terceros estará sujeto a las políticas de dichos
+                    servicios. Se recomienda supervisión adulta en su uso.
+                </p>
+
+                <h3 id="derechos">11. Derechos del Usuario</h3>
+                <p>Tienes derecho a:</p>
+                <ul>
+                    <li>Acceder a tus datos personales.</li>
+                    <li>Rectificarlos o suprimirlos.</li>
+                    <li>Oponerte al tratamiento.</li>
+                    <li>Limitar el tratamiento.</li>
+                    <li>Solicitar la portabilidad.</li>
+                </ul>
+                <p>
+                    Dado que los datos se almacenan y procesan únicamente en tu dispositivo o en servicios externos
+                    elegidos por ti, el ejercicio de estos derechos se realiza principalmente:
+                </p>
+                <ul>
+                    <li>Eliminando el contenido desde la app o desinstalándola.</li>
+                    <li>Contactando directamente con los servicios de destino.</li>
+                </ul>
+                <p>
+                    Asimismo, puedes presentar una reclamación ante la <span class="kbd">Agencia Española de Protección
+                        de Datos (AEPD)</span> u otra autoridad competente.
+                </p>
+
+                <h3 id="cambios">12. Cambios en la Política de Privacidad</h3>
+                <p>
+                    Podremos actualizar esta Política de Privacidad en cualquier momento.
+                    Si realizamos cambios relevantes, lo notificaremos en la app o a través de otros medios apropiados.
+                    La nueva versión indicará su <strong>fecha de entrada en vigor</strong>.
+                </p>
+
+                <div class="callout"
+                    style="background:#e0faff; border-color: var(--accent-dark); font-weight: 500; text-align: center; margin-top: 32px;">
+                    ✅ Al instalar y usar HookNote, aceptas expresamente estos Términos y esta Política de Privacidad.
+                </div>
+            </section>
+
+            <section class="block" id="contacto" style="text-align: center; padding-bottom: 0;">
+                <h2>📩 Contacto</h2>
+                <p>
+                    Para consultas relacionadas con privacidad o este documento, puedes contactar con DayCraft Studio
+                    Apps:<br />
+                    <a href="mailto:daycraftstudioapps@gmail.com"
+                        style="font-weight: 600; font-size: 1.1rem; display: inline-block; margin-top: 8px;">daycraftstudioapps@gmail.com</a>
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <a href="./index.html" class="brand" style="justify-content: center; margin-bottom: 8px;">
+                <img src="./images/logo.png" alt="HookNote Logo" style="height: 30px;">
+                HookNote
+            </a>
+            <p>El punto de entrada universal para tus flujos de automatización.</p>
+            <div style="font-size: 0.9rem; margin-top: 16px;">
+                © <span id="year">2026</span> DayCraft Studio Apps (by J. Martínez H.) · Documento legal (ES)
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

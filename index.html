@@ -39,8 +39,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
         rel="stylesheet">
-  <script type="module" crossorigin src="/landing/assets/index-C0J4cwf-.js"></script>
-  <link rel="stylesheet" crossorigin href="/landing/assets/index-DaSZIXkI.css">
+  <script type="module" crossorigin src="/landing/assets/main-Xn3hlkf2.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing/assets/main-CnOqYNWs.css">
 </head>
 
 <body>
@@ -84,10 +84,11 @@
         <!-- 1️⃣ Hero -->
         <section class="hero pb-20 pt-20">
             <div class="container text-center">
-                <div class="badge fade-up">Solo Android · Actualmente gratuita durante la fase beta</div>
-                <h1 class="fade-up delay-1">Lanza tus automatizaciones<br>en un toque</h1>
-                <p class="subtitle fade-up delay-2">HookNote te permite enviar texto o audio a hasta 5 webhooks
-                    diferentes. Sin chats. Sin bots. Sin fricción.</p>
+                <div class="badge fade-up">Solo Android · Gratuita</div>
+                <h1 class="fade-up delay-1">Lanza cualquier automatización en un toque.</h1>
+                <p class="subtitle fade-up delay-2">Envía texto o audio a hasta 5 webhooks distintos desde un único
+                    punto de entrada.
+                    Sin bots. Sin chats. Sin cambiar de app.</p>
 
                 <div class="hero-actions fade-up delay-3">
                     <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
@@ -115,7 +116,7 @@
                     <div class="problem-solution mt-8">
                         <div class="highlight-line"></div>
                         <p><strong>HookNote nace para resolver exactamente eso:</strong><br>Un único punto de entrada
-                            unificado para todos tus flujos de trabajo.</p>
+                            para disparar todos tus flujos sin fricción.</p>
                     </div>
                 </div>
             </div>
@@ -145,7 +146,8 @@
                     <div class="step-card glass-panel">
                         <div class="step-number">3</div>
                         <h3>Envía texto o audio</h3>
-                        <p>Dispara tu mensaje directamente a tu endpoint en formato estructurado JSON.</p>
+                        <p>Envía tu mensaje (texto o audio) directamente al endpoint.
+                            Los textos quedan registrados localmente. Los audios no se almacenan tras enviarse.</p>
                         <img src="/landing/images/audio.png" alt="Enviar Audio" class="step-image">
                     </div>
                 </div>
@@ -157,7 +159,7 @@
             <div class="container">
                 <div class="text-center mb-16">
                     <h2 class="section-title">Casos de uso reales</h2>
-                    <p class="subtitle">Descubre cómo los makers están integrando HookNote en sus rutinas diarias.</p>
+                    <p class="subtitle">Algunas formas reales de usar HookNote en tu día a día.</p>
                 </div>
 
                 <div class="use-cases-grid">
@@ -172,7 +174,7 @@
                             </svg>
                         </div>
                         <h4>Inbox Universal</h4>
-                        <p>Envía todas tus tareas o notas sueltas instantáneamente a Notion u Obsidian.</p>
+                        <p>Envía tareas o notas rápidas directamente a Notion, Obsidian o tu sistema personal.</p>
                     </div>
                     <div class="use-case-card premium-card">
                         <div class="uc-icon-wrapper">
@@ -279,14 +281,15 @@
                                 <span class="check-icon">✓</span>
                                 <div>
                                     <strong>Sin historial remoto.</strong>
-                                    <p>Si envías un texto o un audio, nunca pasa por nuestros servidores. Nosotros no
-                                        almacenamos nada, nunca.</p>
+                                    <p>Los textos enviados se almacenan localmente en el historial del dispositivo. Los
+                                        audios, en cambio, se eliminan tras ser enviados: no se guardan ni son
+                                        reproducibles después.</p>
                                 </div>
                             </li>
                             <li>
                                 <span class="check-icon">✓</span>
                                 <div>
-                                    <strong>Analíticas cero.</strong>
+                                    <strong>No recopilamos analíticas ni telemetría.</strong>
                                     <p>No recopilamos contenido, ni leemos lo que escribes, ni analizamos tu voz.</p>
                                 </div>
                             </li>
@@ -314,7 +317,7 @@
                                         <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                                         <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                                     </svg>
-                                    Cifrado E2E
+                                    Conexión segura HTTPS
                                 </div>
                                 <div class="connection-path">
                                     <div class="data-packet"></div>
@@ -343,7 +346,7 @@
             <div class="container max-w-800">
                 <div class="text-center mb-10">
                     <h2 class="section-title">Estructura de los datos</h2>
-                    <p class="subtitle">Enviados (POST) al endpoint configurado.</p>
+                    <p class="subtitle">Los datos se envían mediante POST al endpoint que configures.</p>
                 </div>
 
                 <div class="code-editor">
@@ -391,6 +394,12 @@
 <span class="token punct">}</span></code></pre>
                 </div>
 
+                <p
+                    style="font-size: 0.85rem; color: var(--text-muted); padding-left: 8px; margin-top: 12px; font-weight: 500;">
+                    <span style="color: var(--primary); margin-right: 4px;">ℹ️</span> <strong>Nota:</strong> los audios
+                    enviados no se almacenan en el dispositivo tras el envío.
+                </p>
+
                 <div class="code-editor mt-6">
                     <div class="code-header">
                         <div class="filename">
@@ -426,9 +435,11 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p><strong>Claro y rotundo: NO.</strong> Su misión no es conversar, sino <em>disparar
+                            <p><strong>No. HookNote no es una app de mensajería</strong> Su misión no es conversar, sino
+                                <em>disparar
                                     información</em>. Funciona como un mando a distancia para enviar paquetes de datos
-                                hacia tus servidores o flujos (Zapier, n8n, Make).</p>
+                                hacia tus servidores o flujos (Zapier, n8n, Make).
+                            </p>
                         </div>
                     </div>
 
@@ -438,10 +449,10 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Sí. Aunque no es bidireccional (tipo chat), si tu webhook devuelve un JSON válido con el
-                                campo <code>message</code> resuelto con status 200, HookNote mostrará tu mensaje en la
-                                pantalla para confirmar que el proceso terminó (Ej: "Nota guardada correctamente"). En
-                                caso contrario, guardará el log con el código de error HTTP generado.</p>
+                            <p>Si tu webhook devuelve un JSON válido con el
+                                campo <code>message</code> y responde con código 200, HookNote mostrará ese mensaje como
+                                confirmación.
+                                En caso contrario, se guardará el estado HTTP para que puedas revisar el envío.</p>
                         </div>
                     </div>
 
@@ -453,6 +464,18 @@
                         <div class="faq-answer">
                             <p>Exclusivamente en tu dispositivo móvil y en el servidor destino que tú hayas configurado.
                                 HookNote no lee, no guarda y no sube tus datos a bases de datos propias.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Puedo volver a escuchar un audio que envié?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. Por diseño, los audios se eliminan del dispositivo una vez enviados.
+                                HookNote muestra en el historial que se envió un audio, pero no guarda el archivo ni
+                                permite su reproducción posterior.</p>
                         </div>
                     </div>
 
@@ -473,10 +496,10 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Actualmente es <strong>100% gratuita</strong> y sin publicidad, ya que estamos validando
-                                el concepto
-                                en fase beta. En el futuro, introduciremos una capa PRO para opciones más avanzadas,
-                                pero las funciones core básicas siempre seguirán siendo gratuitas.</p>
+                            <p>Actualmente es <strong>100% gratuita</strong> y sin publicidad mientras validamos el
+                                producto. En el futuro podría incluir funciones avanzadas de pago, pero el envío básico
+                                a
+                                webhooks siempre será gratuito.</p>
                         </div>
                     </div>
                 </div>
@@ -495,11 +518,11 @@
                     </a>
                 </div>
                 <div class="ios-cta mt-8 glass-box">
-                    <p style="margin-bottom: 12px; opacity: 0.9;">¿Tienes un iPhone? Queremos saber con cuántos de
-                        vosotros contamos.</p>
-                    <a href="https://airtable.com/appsfR6cdsuIkAtZn/pagk4rQ0Wsu5eZFZA/form" target="_blank"
+                    <p style="margin-bottom: 12px; opacity: 0.9;">¿Quieres HookNote en iOS?
+                        Si hay suficiente interés, empezamos el desarrollo.</p>
+                    <a href="https://airtable.com/appsfR6cdsuIkAtZn/pag0CC9ZQFNQfKP9s/form" target="_blank"
                         class="ios-link">
-                        Apúntate a la lista para iOS →
+                        Quiero HookNote en iOS →
                     </a>
                 </div>
             </div>
@@ -515,7 +538,15 @@
                 </div>
                 <p>El punto de entrada universal para tus flujos de automatización.</p>
                 <div class="maker-badge">
-                    Creado con ❤️ por un maker, para makers. &copy; 2026
+                    &copy; 2026 HookNote
+                </div>
+                <div class="legal-links" style="margin-top: 16px;">
+                    <a href="./legal_es.html"
+                        style="color: var(--text-muted); font-size: 0.85rem; text-decoration: underline; transition: color 0.2s;"
+                        onmouseover="this.style.color='var(--primary)'"
+                        onmouseout="this.style.color='var(--text-muted)'">
+                        Aviso Legal, Términos de Uso y Política de Privacidad
+                    </a>
                 </div>
             </div>
         </div>
