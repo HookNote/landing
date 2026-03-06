@@ -82,79 +82,97 @@
 
     <main>
         <!-- 1️⃣ Hero -->
-        <section class="hero pb-20 pt-20">
+        <section class="hero pb-12 pt-20">
             <div class="container text-center">
-                <div class="badge fade-up">Solo Android · Gratuita</div>
-                <h1 class="fade-up delay-1">Lanza cualquier automatización en un toque.</h1>
-                <p class="subtitle fade-up delay-2">Envía texto o audio a hasta 5 webhooks distintos desde un único
-                    punto de entrada.
-                    Sin bots. Sin chats. Sin cambiar de app.</p>
+                <h1 class="fade-up delay-1">Envía notas de voz o texto a tus automatizaciones en segundos</h1>
+                <p class="subtitle fade-up delay-2">Captura ideas, gastos, tareas o incidencias y mándalas desde tu
+                    móvil a n8n, Make, Zapier o tu propio servidor.</p>
 
-                <div class="hero-actions fade-up delay-3">
-                    <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
-                        class="cta-button primary-btn">
-                        <span>Descargar en Google Play</span>
-                    </a>
-                    <a href="#how-it-works" class="cta-button secondary-btn">Ver cómo funciona</a>
+                <div class="hero-actions fade-up delay-3"
+                    style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
+                            class="cta-button primary-btn">
+                            <span>Descargar en Google Play</span>
+                        </a>
+                        <a href="#how-it-works" class="cta-button secondary-btn">Ver cómo funciona</a>
+                    </div>
+                    <div class="badge mt-2" style="font-size: 0.8rem; letter-spacing: 0.5px; opacity: 0.9;">Solo Android
+                        · Gratuita · Sin servidores intermedios</div>
+                </div>
+
+                <!-- 2️⃣ Banda de usos rápidos & Compatibilidad Integrada -->
+                <div class="fade-up delay-4"
+                    style="margin-top: 2rem; margin-bottom: 2rem; max-width: 580px; margin-left: auto; margin-right: auto; padding: 1rem 1.5rem; background: rgba(0, 0, 0, 0.02); border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.04);">
+                    <p
+                        style="font-weight: 500; color: var(--text); font-size: 0.95rem; margin-bottom: 0.25rem; letter-spacing: -0.2px;">
+                        Guardar ideas <span style="opacity: 0.3; font-weight: normal; margin: 0 4px;">&middot;</span>
+                        Registrar gastos <span style="opacity: 0.3; font-weight: normal; margin: 0 4px;">&middot;</span>
+                        Crear tareas <span style="opacity: 0.3; font-weight: normal; margin: 0 4px;">&middot;</span>
+                        Disparar flujos
+                    </p>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">
+                        Compatible con <span style="color: var(--text); font-weight: 600;">n8n, Make, Zapier, IFTTT y
+                            backend propio</span>
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- 2️⃣ El problema real -->
+        <!-- 3️⃣ El problema real -->
         <section class="problem-section bg-soft py-20">
             <div class="container text-center max-w-800">
-                <h2 class="section-title">Automatizar está bien.<br>Enviar información no tanto.</h2>
+                <h2 class="section-title">Capturar información desde el móvil no debería dar tanta fricción</h2>
+                <p class="subtitle" style="margin-top: 1.5rem;">HookNote está pensada para enviar una nota de voz o
+                    texto a tu sistema en segundos, sin abrir chats, buscar bots ni rellenar formularios pesados.</p>
                 <div class="problem-list glass-panel text-left mt-10">
                     <ul>
-                        <li><span class="cross">✕</span> Perder tiempo buscando el bot correcto en Telegram/Discord.
-                        </li>
-                        <li><span class="cross">✕</span> Tener varias apps de mensajería abiertas para distintos flujos.
-                        </li>
-                        <li><span class="cross">✕</span> Copiar, cambiar de app y pegar texto constantemente.</li>
-                        <li><span class="cross">✕</span> Rellenar formularios lentos en el navegador.</li>
+                        <li><span class="cross">✕</span> Evita perder tiempo buscando el bot correcto</li>
+                        <li><span class="cross">✕</span> Evita copiar y pegar entre varias apps</li>
+                        <li><span class="cross">✕</span> Evita formularios lentos en el navegador</li>
                     </ul>
                     <div class="problem-solution mt-8">
                         <div class="highlight-line"></div>
-                        <p><strong>HookNote nace para resolver exactamente eso:</strong><br>Un único punto de entrada
-                            para disparar todos tus flujos sin fricción.</p>
+                        <p style="font-weight: 600;">Envía la información directamente a tu flujo</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3️⃣ Cómo funciona -->
+        <!-- 4️⃣ Cómo funciona -->
         <section id="how-it-works" class="how-it-works py-20">
             <div class="container">
                 <div class="text-center mb-16">
-                    <h2 class="section-title">Tres pasos. Sin fricción.</h2>
-                    <p class="subtitle">No es un chat. Es tu disparador personal hacia la nube.</p>
+                    <h2 class="section-title">Cómo funciona</h2>
+                    <p class="subtitle">Configúrala una vez y úsala como botón rápido para mandar voz o texto a tus
+                        flujos.</p>
                 </div>
 
                 <div class="steps-grid">
                     <div class="step-card glass-panel">
                         <div class="step-number">1</div>
-                        <h3>Configura tus webhooks</h3>
-                        <p>Guarda de 1 a 5 endpoints distintos (n8n, Make, Zapier, tu propio backend).</p>
-                        <img src="/images/webhook.png" alt="Configurar Webhooks" class="step-image">
+                        <h3>Configura tus destinos</h3>
+                        <p>Guarda de 1 a 5 destinos distintos para n8n, Make, Zapier o tu propio backend.</p>
+                        <img src="/images/webhook.png" alt="Configurar Destinos" class="step-image">
                     </div>
                     <div class="step-card glass-panel">
                         <div class="step-number">2</div>
-                        <h3>Elige el flujo destino</h3>
-                        <p>Abre la app y selecciona rápidamente hacia dónde quieres enviar la información.</p>
-                        <img src="/images/texto.png" alt="Seleccionar flujo" class="step-image">
+                        <h3>Elige a dónde enviar</h3>
+                        <p>Abre la app y selecciona rápidamente el flujo o destino que quieras usar.</p>
+                        <img src="/images/texto.png" alt="Seleccionar destino" class="step-image">
                     </div>
                     <div class="step-card glass-panel">
                         <div class="step-number">3</div>
-                        <h3>Envía texto o audio</h3>
-                        <p>Envía tu mensaje (texto o audio) directamente al endpoint.
-                            Los textos quedan registrados localmente. Los audios no se almacenan tras enviarse.</p>
-                        <img src="/images/audio.png" alt="Enviar Audio" class="step-image">
+                        <h3>Graba o escribe y envía</h3>
+                        <p>Manda texto o audio al instante. Los textos quedan en el historial local y los audios no se
+                            guardan tras enviarse.</p>
+                        <img src="/images/audio.png" alt="Enviar mensaje" class="step-image">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4️⃣ Casos de uso -->
+        <!-- 5️⃣ Casos de uso -->
         <section id="use-cases" class="use-cases bg-soft py-20">
             <div class="container">
                 <div class="text-center mb-16">
@@ -168,26 +186,13 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
-                                <path d="M12 12v9"></path>
-                                <path d="m8 17 4 4 4-4"></path>
-                            </svg>
-                        </div>
-                        <h4>Inbox Universal</h4>
-                        <p>Envía tareas o notas rápidas directamente a Notion, Obsidian o tu sistema personal.</p>
-                    </div>
-                    <div class="use-case-card premium-card">
-                        <div class="uc-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <path d="M12 16v-4"></path>
                                 <path d="M12 8h.01"></path>
                             </svg>
                         </div>
-                        <h4>Captura de Ideas</h4>
-                        <p>Graba notas de voz mientras caminas para procesarlas o transcribirlas luego.</p>
+                        <h4>1. Captura de Ideas</h4>
+                        <p>Graba una nota rápida mientras caminas y envíala a tu sistema para procesarla después.</p>
                     </div>
                     <div class="use-case-card premium-card">
                         <div class="uc-icon-wrapper">
@@ -198,8 +203,36 @@
                                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                             </svg>
                         </div>
-                        <h4>Registro de Gastos</h4>
-                        <p>Apunta rápidamente un gasto enviando el importe y concepto directo a tu Google Sheets.</p>
+                        <h4>2. Registro de Gastos</h4>
+                        <p>Envía importe y concepto a Google Sheets o a tu flujo contable en segundos.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                                <path d="M12 12v9"></path>
+                                <path d="m8 17 4 4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h4>3. Tareas y notas rápidas</h4>
+                        <p>Manda texto o voz a Notion, Obsidian o tu sistema personal.</p>
+                    </div>
+                    <div class="use-case-card premium-card">
+                        <div class="uc-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h4>4. Incidencias o partes</h4>
+                        <p>Registra información desde el móvil y envíala al flujo correspondiente.</p>
                     </div>
                     <div class="use-case-card premium-card">
                         <div class="uc-icon-wrapper">
@@ -222,8 +255,8 @@
                                 <path d="m11 13.73-4 6.93"></path>
                             </svg>
                         </div>
-                        <h4>Activar Flujos n8n / Make</h4>
-                        <p>Lanza automatizaciones complejas o procesos batch del servidor con un simple toque.</p>
+                        <h4>5. Flujos n8n / Make</h4>
+                        <p>Dispara automatizaciones complejas desde una interfaz simple.</p>
                     </div>
                     <div class="use-case-card premium-card">
                         <div class="uc-icon-wrapper">
@@ -234,63 +267,48 @@
                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
                             </svg>
                         </div>
-                        <h4>Control Domótico</h4>
-                        <p>Envía comandos simples a tu Home Assistant o servidor local y visualiza su estado.</p>
-                    </div>
-                    <div class="use-case-card premium-card">
-                        <div class="uc-icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-                                <line x1="12" x2="12" y1="19" y2="22"></line>
-                            </svg>
-                        </div>
-                        <h4>Diario en Audio</h4>
-                        <p>Registra tus pensamientos diarios enviando notas de voz privadas a tu repositorio.</p>
+                        <h4>6. Domótica o backend propio</h4>
+                        <p>Envía comandos o datos simples a Home Assistant o a tu servidor.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5️⃣ Privacidad y Arquitectura -->
+        <!-- 6️⃣ Privacidad y Arquitectura -->
         <section id="privacy" class="privacy-section py-20 bg-dark text-white">
             <div class="container">
                 <div class="privacy-grid">
                     <div class="privacy-content">
-                        <h2 class="section-title">Tu información es <span class="highlight-cyan">solo tuya.</span></h2>
+                        <h2 class="section-title">Tu información sigue <span class="highlight-cyan">siendo tuya.</span>
+                        </h2>
                         <ul class="privacy-list">
                             <li>
                                 <span class="check-icon">✓</span>
                                 <div>
-                                    <strong>Cero servidores intermedios.</strong>
-                                    <p>Los datos van directamente desde tu dispositivo al endpoint que tú configures.
+                                    <strong>Sin servidores intermedios</strong>
+                                    <p>Los datos van directamente desde tu móvil al destino que configures.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Configuración guardada en local</strong>
+                                    <p>Las URLs y credenciales se almacenan en tu dispositivo.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Sin historial remoto</strong>
+                                    <p>Los textos quedan en el historial local. Los audios se eliminan tras enviarse.
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <span class="check-icon">✓</span>
                                 <div>
-                                    <strong>Tokens en local.</strong>
-                                    <p>Las URLs y las credenciales se encriptan y guardan exclusivamente en el
-                                        almacenamiento de tu móvil.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                <div>
-                                    <strong>Sin historial remoto.</strong>
-                                    <p>Los textos enviados se almacenan localmente en el historial del dispositivo. Los
-                                        audios, en cambio, se eliminan tras ser enviados: no se guardan ni son
-                                        reproducibles después.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="check-icon">✓</span>
-                                <div>
-                                    <strong>No recopilamos analíticas ni telemetría.</strong>
-                                    <p>No recopilamos contenido, ni leemos lo que escribes, ni analizamos tu voz.</p>
+                                    <strong>Sin telemetría ni analíticas</strong>
+                                    <p>No recopilamos tu contenido ni analizamos tu voz.</p>
                                 </div>
                             </li>
                         </ul>
@@ -341,11 +359,91 @@
             </div>
         </section>
 
-        <!-- 6️⃣ Qué se envía exactamente (Devs) -->
+        <!-- 7️⃣ Para quién es & 8️⃣ FAQ -->
+        <section id="faq" class="faq-section py-20">
+            <div class="container max-w-800">
+                <h2 class="section-title text-center mb-16">Preguntas Frecuentes</h2>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Es un chat tipo Telegram o WhatsApp?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p><strong>No. HookNote no es una app de mensajería.</strong> Está pensada para capturar voz
+                                o texto y enviarlo a tus flujos o servidores.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Puedo recibir respuesta o confirmación del webhook?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Si tu webhook devuelve un JSON válido con el
+                                campo <code>message</code> y responde con código 200, HookNote mostrará ese mensaje como
+                                confirmación.
+                                En caso contrario, se guardará el estado HTTP para que puedas revisar el envío.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Dónde se almacenan mis audios y mis datos?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Exclusivamente en tu dispositivo móvil y en el servidor destino que tú hayas configurado.
+                                HookNote no lee, no guarda y no sube tus datos a bases de datos propias.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Puedo volver a escuchar un audio que envié?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. Por diseño, los audios se eliminan del dispositivo una vez enviados.
+                                HookNote muestra en el historial que se envió un audio, pero no guarda el archivo ni
+                                permite su reproducción posterior.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Cuántos webhooks puedo configurar?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Puedes almacenar y organizar hasta 5 flujos/webhooks distintos y alternar entre ellos con
+                                un solo clic.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            ¿Es gratuita o de pago?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Actualmente es <strong>100% gratuita</strong> y sin publicidad mientras validamos el
+                                producto. En el futuro podría incluir funciones avanzadas de pago, pero el envío básico
+                                a
+                                webhooks siempre será gratuito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8️⃣ Qué se envía exactamente (Devs) -->
         <section class="payload-section bg-soft py-20">
             <div class="container max-w-800">
                 <div class="text-center mb-10">
-                    <h2 class="section-title">Estructura de los datos</h2>
+                    <h2 class="section-title">Detalles técnicos para desarrolladores</h2>
                     <p class="subtitle">Los datos se envían mediante POST al endpoint que configures.</p>
                 </div>
 
@@ -423,94 +521,14 @@
             </div>
         </section>
 
-        <!-- 7️⃣ Para quién es & 8️⃣ FAQ -->
-        <section id="faq" class="faq-section py-20">
-            <div class="container max-w-800">
-                <h2 class="section-title text-center mb-16">Preguntas Frecuentes</h2>
-
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Esta app es un chat tipo Telegram o WhatsApp?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p><strong>No. HookNote no es una app de mensajería</strong> Su misión no es conversar, sino
-                                <em>disparar
-                                    información</em>. Funciona como un mando a distancia para enviar paquetes de datos
-                                hacia tus servidores o flujos (Zapier, n8n, Make).
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Puedo recibir respuesta o confirmación del webhook?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Si tu webhook devuelve un JSON válido con el
-                                campo <code>message</code> y responde con código 200, HookNote mostrará ese mensaje como
-                                confirmación.
-                                En caso contrario, se guardará el estado HTTP para que puedas revisar el envío.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Dónde se almacenan mis audios y mis datos?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Exclusivamente en tu dispositivo móvil y en el servidor destino que tú hayas configurado.
-                                HookNote no lee, no guarda y no sube tus datos a bases de datos propias.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Puedo volver a escuchar un audio que envié?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No. Por diseño, los audios se eliminan del dispositivo una vez enviados.
-                                HookNote muestra en el historial que se envió un audio, pero no guarda el archivo ni
-                                permite su reproducción posterior.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Cuántos webhooks puedo configurar?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Puedes almacenar y organizar hasta 5 flujos/webhooks distintos y alternar entre ellos con
-                                un solo clic.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Es gratuita o de pago?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Actualmente es <strong>100% gratuita</strong> y sin publicidad mientras validamos el
-                                producto. En el futuro podría incluir funciones avanzadas de pago, pero el envío básico
-                                a
-                                webhooks siempre será gratuito.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- 9️⃣ CTA Final -->
         <section class="final-cta py-20 bg-primary text-white text-center">
             <div class="container max-w-800">
-                <h2 class="section-title" style="color: white; margin-bottom: 24px;">Empieza a lanzar tus flujos más
-                    rápido.</h2>
+                <h2 class="section-title" style="color: white; margin-bottom: 16px;">Empieza a capturar voz o texto y
+                    enviarlo en segundos</h2>
+                <p class="subtitle" style="color: rgba(255,255,255,0.9); margin-bottom: 32px;">HookNote te ayuda a
+                    mandar información a tus automatizaciones sin chats, sin formularios lentos y sin servidores
+                    intermedios.</p>
                 <div class="cta-buttons-group">
                     <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
                         class="cta-button btn-white">
@@ -518,11 +536,11 @@
                     </a>
                 </div>
                 <div class="ios-cta mt-8 glass-box">
-                    <p style="margin-bottom: 12px; opacity: 0.9;">¿Quieres HookNote en iOS?
-                        Si hay suficiente interés, empezamos el desarrollo.</p>
+                    <p style="margin-bottom: 12px; opacity: 0.9;">¿Quieres HookNote en iPhone? Apúntate para el
+                        lanzamiento de iOS.</p>
                     <a href="https://airtable.com/appsfR6cdsuIkAtZn/pag0CC9ZQFNQfKP9s/form" target="_blank"
                         class="ios-link">
-                        Quiero HookNote en iOS →
+                        Apuntarme a la lista →
                     </a>
                 </div>
             </div>
@@ -536,7 +554,7 @@
                     <img src="/images/logo.png" alt="HookNote Logo" style="height: 30px;">
                     HookNote
                 </div>
-                <p>El punto de entrada universal para tus flujos de automatización.</p>
+                <p>Notas de voz o texto hacia tus automatizaciones, en segundos.</p>
                 <div class="maker-badge">
                     &copy; 2026 HookNote
                 </div>
