@@ -2,6 +2,17 @@
 <html lang="es">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KTXKHZTX');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HookNote - El punto de entrada universal para tus automatizaciones</title>
@@ -44,6 +55,11 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTXKHZTX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
     <nav>
         <div class="container nav-container">
@@ -74,9 +90,10 @@
             <a href="#faq" class="mobile-link">FAQ</a>
             <hr class="mobile-divider">
             <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
-                class="cta-button primary-btn w-full mt-4">
+                id="btn-download-nav" class="cta-button primary-btn w-full mt-4">
                 <span>Descargar App</span>
             </a>
+
         </div>
     </nav>
 
@@ -92,10 +109,13 @@
                     style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
                     <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                         <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
-                            class="cta-button primary-btn">
+                            id="btn-download-hero" class="cta-button primary-btn">
                             <span>Descargar en Google Play</span>
                         </a>
-                        <a href="#how-it-works" class="cta-button secondary-btn">Ver cómo funciona</a>
+
+                        <a href="#how-it-works" id="btn-how-it-works" class="cta-button secondary-btn">Ver cómo
+                            funciona</a>
+
                     </div>
                     <div class="badge mt-2" style="font-size: 0.8rem; letter-spacing: 0.5px; opacity: 0.9;">Solo Android
                         · Gratuita · Sin servidores intermedios</div>
@@ -531,17 +551,19 @@
                     intermedios.</p>
                 <div class="cta-buttons-group">
                     <a href="https://play.google.com/store/apps/details?id=com.hooknote.app" target="_blank"
-                        class="cta-button btn-white">
+                        id="btn-download-footer" class="cta-button btn-white">
                         <span>Descargar en Google Play</span>
                     </a>
+
                 </div>
                 <div class="ios-cta mt-8 glass-box">
                     <p style="margin-bottom: 12px; opacity: 0.9;">¿Quieres HookNote en iPhone? Apúntate para el
                         lanzamiento de iOS.</p>
                     <a href="https://airtable.com/appsfR6cdsuIkAtZn/pag0CC9ZQFNQfKP9s/form" target="_blank"
-                        class="ios-link">
+                        id="btn-ios-waitlist" class="ios-link">
                         Apuntarme a la lista →
                     </a>
+
                 </div>
             </div>
         </section>
