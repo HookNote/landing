@@ -2,6 +2,23 @@
 <html lang="en">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+        // Load granted state if already accepted
+        if (localStorage.getItem("hooknote_cookie_consent") === "accepted") {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+    </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -349,6 +366,85 @@
         :target {
             scroll-margin-top: 80px;
         }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 16px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 9999;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: var(--sans);
+        }
+
+        @media (min-width: 768px) {
+            .cookie-banner {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px 48px;
+            }
+        }
+
+        .cookie-content {
+            flex: 1;
+            max-width: 800px;
+        }
+
+        .cookie-content p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .cookie-accept {
+            background: #00bcd4;
+            color: #0f172a;
+        }
+
+        .cookie-accept:hover {
+            background: white;
+            color: #0f172a;
+            transform: translateY(-2px);
+        }
+
+        .cookie-decline {
+            background: transparent;
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .cookie-decline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
     </style>
 </head>
 
@@ -388,7 +484,7 @@
             <div class="meta" role="list">
                 <span class="badge" role="listitem">Effective: <strong>February 1, 2026</strong></span>
                 <span class="badge" role="listitem">Dev: <strong>J. Martínez H.</strong></span>
-                <span class="badge" role="listitem"><span class="ok">●</span> App with no ads or analytics</span>
+                <span class="badge" role="listitem"><span class="ok">●</span> App with no ads or analytics (Web uses analytics cookies)</span>
             </div>
 
             <ul class="toc" aria-label="Table of Contents">
@@ -605,7 +701,17 @@
                         (AEPD)</span> or another competent authority.
                 </p>
 
-                <h3 id="changes">12. Changes to the Privacy Policy</h3>
+                <h3 id="cookies">12. Web Cookie Policy</h3>
+                <p>
+                    Although the HookNote mobile application <strong>does not use trackers or analytics</strong>, the website (landing page) you are currently visiting does use limited tracking technology to understand web performance.
+                </p>
+                <ul>
+                    <li><strong>Google Analytics 4 (GA4):</strong> We use GA4 exclusively to collect statistical information about traffic, visits, and user interactions on the web. We do not use this data for advertising purposes.</li>
+                    <li><strong>Consent:</strong> These analytics cookies, managed indirectly through Google Tag Manager (GTM), are only installed if you grant your proactive consent through our cookie banner. We use "Google Consent Mode v2" to ensure that cookies are not collected or stored if you do not click "Accept".</li>
+                    <li><strong>Revocation:</strong> You can configure, reject, or delete these cookies at any time from your own web browser settings or by clearing site data.</li>
+                </ul>
+
+                <h3 id="changes">13. Changes to the Privacy Policy</h3>
                 <p>
                     We may update this Privacy Policy at any time.
                     If we make significant changes, we will notify you within the app or through other appropriate
@@ -642,6 +748,18 @@
         </footer>
     </div>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p>We use <strong>Google Analytics 4 (GA4)</strong> cookies to measure traffic anonymously and improve our website. We do not use advertising cookies.</p>
+        </div>
+        <div class="cookie-actions">
+            <button id="cookie-decline" class="cookie-btn cookie-decline">Decline</button>
+            <button id="cookie-accept" class="cookie-btn cookie-accept">Accept cookies</button>
+        </div>
+    </div>
+
+    <script src="/cookies.js"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>

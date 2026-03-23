@@ -2,6 +2,23 @@
 <html lang="es">
 
 <head>
+    <!-- Google Consent Mode -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+        // Load granted state if already accepted
+        if (localStorage.getItem("hooknote_cookie_consent") === "accepted") {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+    </script>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -349,6 +366,85 @@
         :target {
             scroll-margin-top: 80px;
         }
+
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 16px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            z-index: 9999;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: var(--sans);
+        }
+
+        @media (min-width: 768px) {
+            .cookie-banner {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 20px 48px;
+            }
+        }
+
+        .cookie-content {
+            flex: 1;
+            max-width: 800px;
+        }
+
+        .cookie-content p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+        }
+
+        .cookie-actions {
+            display: flex;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .cookie-btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .cookie-accept {
+            background: #00bcd4;
+            color: #0f172a;
+        }
+
+        .cookie-accept:hover {
+            background: white;
+            color: #0f172a;
+            transform: translateY(-2px);
+        }
+
+        .cookie-decline {
+            background: transparent;
+            color: white;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .cookie-decline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+        }
     </style>
 </head>
 
@@ -388,7 +484,7 @@
             <div class="meta" role="list">
                 <span class="badge" role="listitem">Vigor: <strong>1 de febrero de 2026</strong></span>
                 <span class="badge" role="listitem">Dev: <strong>J. Martínez H.</strong></span>
-                <span class="badge" role="listitem"><span class="ok">●</span> App sin anuncios ni analíticas</span>
+                <span class="badge" role="listitem"><span class="ok">●</span> App sin anuncios ni analíticas (La web usa cookies analíticas)</span>
             </div>
 
             <ul class="toc" aria-label="Índice">
@@ -614,7 +710,17 @@
                         de Datos (AEPD)</span> u otra autoridad competente.
                 </p>
 
-                <h3 id="cambios">12. Cambios en la Política de Privacidad</h3>
+                <h3 id="cookies">12. Política de Cookies en la Web</h3>
+                <p>
+                    Aunque la aplicación móvil de HookNote <strong>no utiliza rastreadores ni analíticas</strong>, el sitio web (landing page) en el que te encuentras sí hace uso de tecnología de seguimiento limitada para conocer el rendimiento de la web.
+                </p>
+                <ul>
+                    <li><strong>Google Analytics 4 (GA4):</strong> Utilizamos GA4 exclusivamente para recabar información estadística sobre el tráfico, las visitas y las interacciones de los usuarios en la web. No usamos estos datos con fines publicitarios.</li>
+                    <li><strong>Consentimiento:</strong> Estas cookies analíticas, gestionadas indirectamente a través de Google Tag Manager (GTM), solo se instalan si otorgas tu consentimiento proactivo a través de nuestro aviso (banner) de cookies. Empleamos "Google Consent Mode v2" para garantizar que no se recopilan ni almacenan cookies si no haces clic en "Aceptar".</li>
+                    <li><strong>Revocación:</strong> Puedes configurar, rechazar o borrar estas cookies en cualquier momento desde los ajustes de tu propio navegador web o borrando los datos del sitio.</li>
+                </ul>
+
+                <h3 id="cambios">13. Cambios en la Política de Privacidad</h3>
                 <p>
                     Podremos actualizar esta Política de Privacidad en cualquier momento.
                     Si realizamos cambios relevantes, lo notificaremos en la app o a través de otros medios apropiados.
@@ -650,6 +756,18 @@
         </footer>
     </div>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p>Usamos cookies analíticas de <strong>Google Analytics 4 (GA4)</strong> para medir el tráfico de forma anónima y mejorar la web. No usamos cookies publicitarias.</p>
+        </div>
+        <div class="cookie-actions">
+            <button id="cookie-decline" class="cookie-btn cookie-decline">Rechazar</button>
+            <button id="cookie-accept" class="cookie-btn cookie-accept">Aceptar cookies</button>
+        </div>
+    </div>
+
+    <script src="/cookies.js"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
