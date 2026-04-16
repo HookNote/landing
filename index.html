@@ -350,6 +350,13 @@
                                     <p>No recopilamos tu contenido ni analizamos tu voz.</p>
                                 </div>
                             </li>
+                            <li>
+                                <span class="check-icon">✓</span>
+                                <div>
+                                    <strong>Cabeceras HTTP con valores sensibles</strong>
+                                    <p>Tus claves se inyectan como cabeceras planas y puedes enmascarar (o volver a hacer visibles) esos datos en la interfaz de la app de forma totalmente reversible.</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="privacy-visual">
@@ -484,6 +491,18 @@
                 <div class="text-center mb-10">
                     <h2 class="section-title">Detalles técnicos para desarrolladores</h2>
                     <p class="subtitle">Los datos se envían mediante POST al endpoint que configures.</p>
+                </div>
+
+                <div class="glass-panel" style="margin-bottom: 2.5rem; padding: 1.5rem; text-align: left; border-left: 4px solid var(--primary);">
+                    <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary);">
+                            <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                        </svg>
+                        Cabeceras HTTP Personalizadas e inyección segura
+                    </h3>
+                    <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 0; line-height: 1.6;">
+                        Inyecta <strong>cabeceras HTTP planas</strong> (como <code style="color: var(--primary); font-weight: 600; background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px;">Authorization: Bearer</code> o <code style="color: var(--primary); font-weight: 600; background: rgba(0,0,0,0.05); padding: 2px 6px; border-radius: 4px;">x-api-key</code>) a nivel de endpoint. HookNote no impone integraciones complejas como JWT ni fuerza tipos de Auth, dándote libertad total. Además, dispones de una función reversible para <em>enmascarar</em> los valores sensibles en tu dispositivo y protegerlos de miradas indiscretas, pudiendo revelarlos en cualquier momento.
+                    </p>
                 </div>
 
                 <div class="code-editor">
