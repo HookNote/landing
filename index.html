@@ -2,7 +2,6 @@
 <html lang="es">
 
 <head>
-    <!-- Google Consent Mode -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -11,7 +10,6 @@
             'analytics_storage': 'denied'
         });
 
-        // Load granted state if already accepted
         if (localStorage.getItem("hooknote_cookie_consent") === "accepted") {
             gtag('consent', 'update', {
                 'ad_storage': 'granted',
@@ -20,7 +18,6 @@
         }
     </script>
 
-    <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
@@ -29,7 +26,6 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-KTXKHZTX');</script>
-    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +38,6 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#f0fdfd">
 
-    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hooknote.javierm.es/">
     <meta property="og:title" content="HookNote - El punto de entrada universal para automatizaciones">
@@ -50,7 +45,6 @@
         content="Lanza tus automatizaciones en un toque. Envía texto o audio a hasta 5 webhooks diferentes. Sin chats. Sin bots. Sin fricción.">
     <meta property="og:image" content="https://hooknote.javierm.es/images/logo.png">
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://hooknote.javierm.es/">
     <meta property="twitter:title" content="HookNote - El punto de entrada universal para automatizaciones">
@@ -58,7 +52,6 @@
         content="Lanza tus automatizaciones en un toque. Envía texto o audio directo a tu endpoint.">
     <meta property="twitter:image" content="https://hooknote.javierm.es/images/logo.png">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/logo.png">
     <link rel="apple-touch-icon" href="/images/logo.png">
     <link rel="canonical" href="https://hooknote.javierm.es/">
@@ -74,21 +67,22 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTXKHZTX" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
 
     <nav>
         <div class="container nav-container">
-            <a href="#" class="logo" style="text-decoration: none;">
-                <img src="/images/logo.png" alt="HookNote Logo">
-                HookNote
-                <span class="author-badge">by Javier M.</span>
-            </a>
+            <div style="display: flex; align-items: center;">
+                <a href="#" class="logo" style="text-decoration: none; padding-right: 4px;">
+                    <img src="/images/logo.png" alt="HookNote Logo">
+                    HookNote
+                </a>
+                <a href="#" style="text-decoration: none;">
+                    <span class="author-badge">by Javier M.</span>
+                </a>
+            </div>
 
-            <!-- Desktop Links -->
             <div class="nav-links desktop-menu">
                 <a href="#how-it-works">Cómo funciona</a>
                 <a href="#use-cases">Casos de uso</a>
@@ -96,13 +90,11 @@
                 <a href="#faq">FAQ</a>
             </div>
 
-            <!-- Hamburger Button -->
             <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
         </div>
 
-        <!-- Mobile Menu Overlay -->
         <div class="mobile-menu">
             <a href="#how-it-works" class="mobile-link">Cómo funciona</a>
             <a href="#use-cases" class="mobile-link">Casos de uso</a>
@@ -118,7 +110,6 @@
     </nav>
 
     <main>
-        <!-- 1️⃣ Hero -->
         <section class="hero pb-12 pt-20">
             <div class="container text-center">
                 <h1 class="fade-up delay-1">Envía notas de voz o texto a tus automatizaciones en segundos</h1>
@@ -141,7 +132,6 @@
                         · Gratuita · Sin servidores intermedios</div>
                 </div>
 
-                <!-- 2️⃣ Banda de usos rápidos & Compatibilidad Integrada -->
                 <div class="fade-up delay-4"
                     style="margin-top: 2rem; margin-bottom: 2rem; max-width: 580px; margin-left: auto; margin-right: auto; padding: 1rem 1.5rem; background: rgba(0, 0, 0, 0.02); border-radius: 12px; border: 1px solid rgba(0, 0, 0, 0.04);">
                     <p
@@ -159,7 +149,6 @@
             </div>
         </section>
 
-        <!-- 3️⃣ El problema real -->
         <section class="problem-section bg-soft py-20">
             <div class="container text-center max-w-800">
                 <h2 class="section-title">Capturar información desde el móvil no debería dar tanta fricción</h2>
@@ -179,7 +168,6 @@
             </div>
         </section>
 
-        <!-- 4️⃣ Cómo funciona -->
         <section id="how-it-works" class="how-it-works py-20">
             <div class="container">
                 <div class="text-center mb-16">
@@ -212,7 +200,6 @@
             </div>
         </section>
 
-        <!-- 5️⃣ Casos de uso -->
         <section id="use-cases" class="use-cases bg-soft py-20">
             <div class="container">
                 <div class="text-center mb-16">
@@ -314,7 +301,6 @@
             </div>
         </section>
 
-        <!-- 6️⃣ Privacidad y Arquitectura -->
         <section id="privacy" class="privacy-section py-20 bg-dark text-white">
             <div class="container">
                 <div class="privacy-grid">
@@ -408,7 +394,6 @@
             </div>
         </section>
 
-        <!-- 7️⃣ Para quién es & 8️⃣ FAQ -->
         <section id="faq" class="faq-section py-20">
             <div class="container max-w-800">
                 <h2 class="section-title text-center mb-16">Preguntas Frecuentes</h2>
@@ -488,7 +473,6 @@
             </div>
         </section>
 
-        <!-- 8️⃣ Qué se envía exactamente (Devs) -->
         <section class="payload-section bg-soft py-20">
             <div class="container max-w-800">
                 <div class="text-center mb-10">
@@ -595,7 +579,6 @@
             </div>
         </section>
 
-        <!-- 9️⃣ CTA Final -->
         <section class="final-cta py-20 bg-primary text-white text-center">
             <div class="container max-w-800">
                 <h2 class="section-title" style="color: white; margin-bottom: 16px;">Empieza a capturar voz o texto y
@@ -629,7 +612,9 @@
                 <div class="logo opacity-80" style="margin-bottom: 16px;">
                     <img src="/images/logo.png" alt="HookNote Logo" style="height: 30px;">
                     HookNote
-                    <span class="author-badge">by Javier M.</span>
+                    <a href="#" style="text-decoration: none;">
+                        <span class="author-badge">by Javier M.</span>
+                    </a>
                 </div>
                 <p>Notas de voz o texto hacia tus automatizaciones, en segundos.</p>
                 <div class="maker-badge">
@@ -647,7 +632,6 @@
         </div>
     </footer>
 
-    <!-- Cookie Consent Banner -->
     <div id="cookie-consent-banner" class="cookie-banner">
         <div class="cookie-content">
             <p>Usamos cookies analíticas de <strong>Google Analytics 4 (GA4)</strong> para medir el tráfico de forma
